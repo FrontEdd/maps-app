@@ -7,10 +7,7 @@ import { MapsApp } from './MapsApp';
 //@ts-ignore
 import mapboxgl from '!mapbox-gl'; // or "const mapboxgl = require('mapbox-gl');"
  
-const accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN
-console.log(accessToken);
-
-mapboxgl.accessToken = accessToken?.toString();
+mapboxgl.accessToken = 'pk.eyJ1IjoiZXJhenVyaXMiLCJhIjoiY2wzOWs0eGN1MDRlbjNqdDVzajU5MXU0dCJ9.mdbDK727YH5Y6mGaq8-WSA';
 
 //Validación para verificar geolocalización
 if ( !navigator.geolocation ) {
